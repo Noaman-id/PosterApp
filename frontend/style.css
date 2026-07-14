@@ -1,0 +1,124 @@
+/* ~~~ UserPost 98 ~~~ handcrafted in NOTEPAD.EXE, obviously ~~~ */
+
+body {
+    background-color: #008080; /* the one true teal */
+    background-image: repeating-linear-gradient(
+        45deg,
+        #008080 0px, #008080 18px,
+        #007070 18px, #007070 20px
+    );
+    font-family: "Times New Roman", Times, serif;
+    margin: 12px;
+}
+
+a { color: #0000EE; }
+a:visited { color: #551A8B; }
+a:active { color: #FF0000; }
+
+.comic { font-family: "Comic Sans MS", cursive; }
+
+/* chunky Windows-95 bevels */
+.bevel-out {
+    border-style: outset;
+    border-color: #FFFFFF #808080 #808080 #FFFFFF;
+}
+
+button {
+    font-family: "Comic Sans MS", cursive;
+    font-weight: bold;
+    background-color: #C0C0C0;
+    border: 3px outset #FFFFFF;
+    padding: 4px 12px;
+    cursor: pointer;
+}
+button:active { border-style: inset; }
+
+input, textarea {
+    font-family: "Courier New", monospace;
+    border: 2px inset #808080;
+    background-color: #FFFFFF;
+}
+
+/* the rainbow title of legends */
+.rainbow-title {
+    font-family: "Comic Sans MS", cursive;
+    font-size: 34px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #FF0000, #FF7F00, #FFFF00, #00FF00, #00FFFF, #0000FF, #8B00FF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: none;
+}
+
+.marquee-bar {
+    background-color: #000000;
+    color: #00FF00;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    padding: 3px 0;
+    width: 100%;
+}
+
+/* <blink> is dead, long live <blink> */
+.blink { animation: blinker 0.9s step-start infinite; font-weight: bold; color: #FF0000; }
+@keyframes blinker { 50% { opacity: 0; } }
+
+/* odometer hit counter */
+.counter {
+    font-family: "Courier New", monospace;
+    font-size: 22px;
+    font-weight: bold;
+    color: #00FF00;
+    background-color: #000000;
+    letter-spacing: 4px;
+    border: 2px inset #808080;
+    padding: 2px 6px;
+}
+
+/* under construction sign */
+.construction {
+    font-family: "Comic Sans MS", cursive;
+    font-weight: bold;
+    font-size: 13px;
+    color: #000000;
+    background: repeating-linear-gradient(
+        45deg,
+        #FFD700 0px, #FFD700 12px,
+        #000000 12px, #000000 24px
+    );
+    background-color: #FFD700;
+    padding: 8px 4px;
+    border: 2px solid #000000;
+    text-align: center;
+    text-shadow: 1px 1px 0 #FFD700, -1px -1px 0 #FFD700, 1px -1px 0 #FFD700, -1px 1px 0 #FFD700;
+    animation: blinker 1.4s step-start infinite;
+}
+
+.badge {
+    font-family: "Times New Roman", serif;
+    font-size: 11px;
+    background-color: #C0C0C0;
+    border: 2px outset #FFFFFF;
+    padding: 4px;
+    text-align: center;
+}
+.badge2 { background-color: #FFFFCC; }
+
+/* guestbook entries */
+.gb-entry {
+    border: 2px inset #808080;
+    background-color: #FFFFCC;
+    padding: 8px;
+    margin-bottom: 10px;
+    font-family: "Comic Sans MS", cursive;
+}
+.gb-entry .gb-head {
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+    color: #800080;
+    font-weight: bold;
+}
+.gb-entry hr { border: 1px dashed #800080; }
+
+.member-row { font-family: "Courier New", monospace; }

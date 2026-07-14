@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>*** UserPost 98 *** ~ The Coolest Corner of the Information Superhighway ~</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<center>
+<table width="760" border="0" cellpadding="0" cellspacing="0">
+<tr><td>
+
+<!-- ============ HEADER ============ -->
+<table width="100%" border="2" cellpadding="8" cellspacing="0" class="bevel-out" bgcolor="#000080">
+<tr>
+  <td align="center">
+    <div class="rainbow-title">&#9733;&#9733;&#9733; UserPost 98 &#9733;&#9733;&#9733;</div>
+    <font color="#FFFF00" face="Comic Sans MS" size="3">Your #1 Cyber-Spot to Post Kool Stuff on the World Wide Web!!</font>
+  </td>
+</tr>
+</table>
+
+<marquee behavior="scroll" scrollamount="6" class="marquee-bar">
+&#128293; WELCOME CYBER-SURFER !!! &#128293; Now with 100% more JavaScript !!! &#9889; Sign our GUESTBOOK !!! &#128231; Don't forget to bookmark this page (CTRL+D) !!! &#128126; NO SPAM PLEASE !!!
+</marquee>
+
+<table width="100%" border="0" cellpadding="4" cellspacing="0" bgcolor="#C0C0C0">
+<tr>
+  <td align="center">
+    <span class="blink" id="login-status-blink">&#9210; YOU ARE NOT LOGGED IN &#9210;</span>
+  </td>
+</tr>
+</table>
+
+<!-- ============ BODY : NAV + CONTENT ============ -->
+<table width="100%" border="2" cellpadding="10" cellspacing="0" class="bevel-out" bgcolor="#C0C0C0">
+<tr>
+
+<!-- ~~~~ SIDEBAR ~~~~ -->
+<td width="170" valign="top" bgcolor="#008080">
+  <table width="100%" border="1" cellpadding="6" cellspacing="0" bgcolor="#C0C0C0">
+    <tr><td align="center" bgcolor="#000080"><font color="#FFFFFF"><b>~ NAVIGATION ~</b></font></td></tr>
+    <tr><td><a href="#" onclick="showSection('home');return false;">&#127968; Home</a></td></tr>
+    <tr><td><a href="#" onclick="showSection('guestbook');return false;">&#128218; Guestbook</a></td></tr>
+    <tr><td><a href="#" onclick="showSection('members');return false;">&#128101; Members</a></td></tr>
+    <tr><td><a href="#" onclick="showSection('mypage');return false;">&#128100; My Page</a></td></tr>
+    <tr><td><a href="#" onclick="logout();return false;">&#128682; Log Out</a></td></tr>
+  </table>
+  <br>
+  <table width="100%" border="1" cellpadding="6" cellspacing="0" bgcolor="#000000">
+    <tr><td align="center">
+      <font color="#00FF00" face="Courier New" size="2">VISITORS:</font><br>
+      <span class="counter" id="hit-counter">000000</span>
+    </td></tr>
+  </table>
+  <br>
+  <center>
+  <div class="construction">&#128679; UNDER<br>CONSTRUCTION &#128679;</div>
+  <br>
+  <div class="badge">Best viewed in<br><b>Netscape Navigator 4.0</b><br>at 800x600</div>
+  <br>
+  <div class="badge badge2">Made with &#128204;<br><b>NOTEPAD.EXE</b></div>
+  </center>
+</td>
+
+<!-- ~~~~ MAIN CONTENT ~~~~ -->
+<td valign="top" bgcolor="#FFFFFF">
+
+  <!-- ======== HOME / LOGIN ======== -->
+  <div id="section-home">
+    <center><h2 class="comic">&#9733; Enter The Site &#9733;</h2></center>
+    <hr>
+    <table width="100%" border="0" cellpadding="10"><tr>
+    <td width="50%" valign="top">
+      <table width="100%" border="2" cellpadding="8" class="bevel-out" bgcolor="#C0C0C0">
+        <tr><td align="center" bgcolor="#000080"><font color="#FFFF00"><b>MEMBER LOGIN</b></font></td></tr>
+        <tr><td>
+          E-Mail:<br><input type="text" id="login-email" size="25"><br>
+          Password:<br><input type="password" id="login-password" size="25"><br><br>
+          <center><button onclick="login()">&gt;&gt; LOG IN &lt;&lt;</button></center>
+          <br>
+          <center><a href="#" onclick="showSection('forgot');return false;"><font size="2">Forgot yer password??</font></a></center>
+        </td></tr>
+      </table>
+    </td>
+    <td width="50%" valign="top">
+      <table width="100%" border="2" cellpadding="8" class="bevel-out" bgcolor="#C0C0C0">
+        <tr><td align="center" bgcolor="#800080"><font color="#FFFF00"><b>NEW?? JOIN THE CREW!!</b></font></td></tr>
+        <tr><td>
+          Username:<br><input type="text" id="reg-username" size="25"><br>
+          E-Mail:<br><input type="text" id="reg-email" size="25"><br>
+          Password:<br><input type="password" id="reg-password" size="25"><br><br>
+          <center><button onclick="register()">&#9733; SIGN ME UP &#9733;</button></center>
+        </td></tr>
+      </table>
+    </td>
+    </tr></table>
+    <hr>
+    <center>
+      <font face="Comic Sans MS" size="2">This page is <span class="blink">HOT</span>! It was last updated: <b>July 14, 1998</b></font>
+    </center>
+  </div>
+
+  <!-- ======== FORGOT PASSWORD ======== -->
+  <div id="section-forgot" style="display:none">
+    <center><h2 class="comic">&#128273; Password Rescue Center &#128273;</h2></center>
+    <hr>
+    <table width="80%" align="center" border="2" cellpadding="8" class="bevel-out" bgcolor="#C0C0C0">
+      <tr><td align="center" bgcolor="#000080"><font color="#FFFF00"><b>STEP 1: REQUEST SECRET CODE</b></font></td></tr>
+      <tr><td>
+        Your E-Mail:<br><input type="text" id="forgot-email" size="30"><br><br>
+        <center><button onclick="forgotPassword()">SEND ME THE CODE!</button></center>
+        <br><font size="2"><i>(psst... the code arrives in the server log. Very secure. Very 1998.)</i></font>
+      </td></tr>
+    </table>
+    <br>
+    <table width="80%" align="center" border="2" cellpadding="8" class="bevel-out" bgcolor="#C0C0C0">
+      <tr><td align="center" bgcolor="#800080"><font color="#FFFF00"><b>STEP 2: ENTER CODE + NEW PASSWORD</b></font></td></tr>
+      <tr><td>
+        E-Mail:<br><input type="text" id="reset-email" size="30"><br>
+        Secret Code:<br><input type="text" id="reset-code" size="10"><br>
+        New Password:<br><input type="password" id="reset-password" size="30"><br><br>
+        <center><button onclick="changePassword()">RESET IT!!</button></center>
+      </td></tr>
+    </table>
+  </div>
+
+  <!-- ======== GUESTBOOK ======== -->
+  <div id="section-guestbook" style="display:none">
+    <center><h2 class="comic">&#128218; ~ The Guestbook ~ &#128218;</h2></center>
+    <center><font face="Comic Sans MS" size="2">Leave your mark on cyberspace, traveler!!</font></center>
+    <hr>
+    <table width="100%" border="2" cellpadding="8" class="bevel-out" bgcolor="#C0C0C0">
+      <tr><td>
+        <b>Sign the guestbook:</b><br>
+        <textarea id="post-content" rows="3" cols="60"></textarea><br>
+        <center><button onclick="signGuestbook()">&#9997; SIGN IT!!</button></center>
+      </td></tr>
+    </table>
+    <br>
+    <div id="guestbook-entries">
+      <center><font face="Comic Sans MS">Loading entries... &#8987;</font></center>
+    </div>
+  </div>
+
+  <!-- ======== MEMBERS ======== -->
+  <div id="section-members" style="display:none">
+    <center><h2 class="comic">&#128101; ~ The Crew ~ &#128101;</h2></center>
+    <hr>
+    <div id="members-list">
+      <center><font face="Comic Sans MS">Loading members... &#8987;</font></center>
+    </div>
+  </div>
+
+  <!-- ======== MY PAGE ======== -->
+  <div id="section-mypage" style="display:none">
+    <center><h2 class="comic">&#128100; ~ My Totally Rad Page ~ &#128100;</h2></center>
+    <hr>
+    <div id="my-info">
+      <center><font face="Comic Sans MS">Loading your info... &#8987;</font></center>
+    </div>
+    <br>
+    <center><b><font face="Comic Sans MS">~ My Guestbook Entries ~</font></b></center>
+    <div id="my-posts"></div>
+  </div>
+
+</td>
+</tr>
+</table>
+
+<!-- ============ FOOTER ============ -->
+<table width="100%" border="2" cellpadding="6" cellspacing="0" class="bevel-out" bgcolor="#000080">
+<tr><td align="center">
+  <font color="#FFFFFF" size="2" face="Comic Sans MS">
+    &copy; 1998 UserPost Industries &#8482; ~ All Rights Reserved ~<br>
+    <a href="mailto:webmaster@userpost98.geocities.com"><font color="#00FFFF">E-Mail the Webmaster!</font></a>
+    &nbsp;|&nbsp; <span class="blink"><font color="#FF00FF">This site uses COOKIES (the localStorage kind)</font></span>
+  </font>
+</td></tr>
+</table>
+
+</td></tr>
+</table>
+</center>
+
+<script src="app.js"></script>
+</body>
+</html>
